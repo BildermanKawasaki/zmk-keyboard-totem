@@ -1,9 +1,12 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "TOTEM-layout.dtsi"
 
+&TOTEM_layout {
+    transform = <&default_transform>;
+};
+
 / {
     chosen {
-        zmk,physical-layout = &physical_layout_0;
         zmk,kscan = &kscan0;
     };
 
@@ -37,10 +40,5 @@
             ;
     };
 
-    physical_layout_0: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        kscan = <&kscan0>;
-        transform = <&default_transform>;
-    };
 
 };
