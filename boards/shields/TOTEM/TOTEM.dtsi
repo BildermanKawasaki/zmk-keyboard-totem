@@ -1,11 +1,11 @@
-#include "TOTEM-layouts.dtsi"
+#include "TOTEM-layout.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout_0;
+        zmk,physical-layout = &TOTEM_layout;
     };
 
     default_transform: keymap_transform_0 {

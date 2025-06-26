@@ -6,9 +6,9 @@
 #include <physical_layouts.dtsi>
 
 / {
-    physical_layout0: physical_layout_0 {
+    TOTEM_layout: TOTEM_layout {
         compatible = "zmk,physical-layout";
-        display-name = "LAYOUT";
+        display-name = "Default";
 
         transform = <&matrix_transform0>;
 
