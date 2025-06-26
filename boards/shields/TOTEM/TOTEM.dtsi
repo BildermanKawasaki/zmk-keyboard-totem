@@ -1,11 +1,11 @@
-#include "TOTEM-layout.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
-
+#include "TOTEM-layout.dtsi"
 
 / {
     chosen {
+        zmk,physical-layout = &physical_layout_0;
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &TOTEM_layout;
+        transform = <&default_transform>;
     };
 
     default_transform: keymap_transform_0 {
@@ -27,7 +27,7 @@
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
+        display-name = "KSCAN";
         
         diode-direction = "col2row"; 
         row-gpios
@@ -37,4 +37,5 @@
             , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+
 };
