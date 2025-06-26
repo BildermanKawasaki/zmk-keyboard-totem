@@ -5,7 +5,6 @@
     chosen {
         zmk,physical-layout = &physical_layout_0;
         zmk,kscan = &kscan0;
-        transform = <&default_transform>;
     };
 
     default_transform: keymap_transform_0 {
@@ -36,6 +35,12 @@
             , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
+    };
+
+    physical_layout_0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        kscan = <&kscan0>;
+        transform = <&default_transform>;
     };
 
 };
