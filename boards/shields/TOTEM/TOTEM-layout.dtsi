@@ -10,8 +10,6 @@
         compatible = "zmk,physical-layout";
         display-name = "Default";
 
-        transform = <&matrix_transform0>;
-
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 106 100   78  152 (-1000)   130   202>
             , <&key_physical_attrs 106 100  196   60  (-400)   249   110>
