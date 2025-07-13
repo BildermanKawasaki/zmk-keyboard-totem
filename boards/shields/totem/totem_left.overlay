@@ -1,4 +1,4 @@
-#include "TOTEM.dtsi"
+#include "totem.dtsi"
 
 &kscan0 {
     col-gpios

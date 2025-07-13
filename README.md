@@ -17,7 +17,7 @@ Edit your `west.yml` file found in your zmk-config's config directory to add the
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-keyboards-TOTEM
+    - name: zmk-keyboards-totem
       remote: bildermankawasaki
       revision: main
   self:

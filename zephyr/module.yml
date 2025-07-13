@@ -1,4 +1,4 @@
-name: zmk-keyboard-TOTEM
+name: zmk-keyboard-totem
 build:
   settings:
     board_root: .
