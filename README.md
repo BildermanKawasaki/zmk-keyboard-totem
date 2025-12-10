@@ -15,7 +15,7 @@ Edit your `west.yml` file found in your zmk-config's config directory to add the
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3 # pinned to v0.3 because main has been updated to use zephyr 4.1 which includes breaking changes
       import: app/west.yml
     - name: zmk-keyboard-totem
       remote: bildermankawasaki
